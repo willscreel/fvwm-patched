@@ -1,0 +1,3 @@
+version=3
+https://github.com/fvwmorg/fvwm/releases \
+ /fvwmorg/fvwm/releases/download/\S+/fvwm-(\d\S+)\.tar\.gz

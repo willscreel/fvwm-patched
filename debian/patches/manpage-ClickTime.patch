@@ -1,0 +1,14 @@
+Description: Add double click time info to ClickTime in manpage.
+Author: Jaimos Skriletz <jaimosskriletz@gmail.com>
+Debian-Bug: https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=567387
+Forwarded: http://www.mail-archive.com/fvwm-workers@fvwm.org/msg04561.html
+Last-Updated: 2016-12-10
+--- a/doc/commands/ClickTime.xml
++++ b/doc/commands/ClickTime.xml
+@@ -26,4 +26,6 @@ is 150 milliseconds.  Omitting the delay
+ <emphasis remap='B'>ClickTime</emphasis>
+ to the default.</para>
+ 
++<para><emphasis remap='B'>ClickTime</emphasis> also specifies the delay
++between two clicks to be interpreted as a double-click.</para>
+ </section>

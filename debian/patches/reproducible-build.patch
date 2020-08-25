@@ -1,0 +1,16 @@
+Description: Reproducible Builds
+  Allow fvwm to be built reproducibly.
+Author: Chris Lamb <lamby@debian.org>
+Debian-Bug: https://bugs.debian.org/831646
+Last-Update: 2016-07-18
+--- a/bin/fvwm-bug.in
++++ b/bin/fvwm-bug.in
+@@ -85,7 +85,7 @@ trap 'rm -f $TEMP $TEMP.x' 0
+ 
+ # Who is mail to?
+ if test x"$address" = x; then
+-	LOCAL=@LOCAL_BUGADDR@
++	LOCAL=
+ 	WORKERS=fvwm-workers@fvwm.org
+ 
+ 	if test "$LOCAL"; then
